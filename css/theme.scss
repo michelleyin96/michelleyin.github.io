@@ -263,6 +263,14 @@ $pink: #FECAD2;
 		}
 	}
 
+	#ctc {
+		background-image: url(../ctc.png);
+		.text-container {
+			@include grad-gray;
+		}
+	}
+
+
 	#woke {
 		background-image: url(../woke.png);
 		.text-container {

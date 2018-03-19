@@ -69,7 +69,14 @@
 			<div class="row">
 				<div class="col l3 m12 s12 title left-align"><span>PROJECTS</span></div>
 				<div class="col l9 m12 s12 desc left-align">
-					<a href="http://www.phenomld.com">
+					<a href="http://ctcusc.com/" target="_blank">
+						<div id="ctc" class="hvr-shrink project-container">
+							<div class="text-container valign-wrapper">
+								<p class="text valign">Developed website from scratch for the student organization I served as a product manager and president for to showcase projects and the team.</p>
+							</div>
+						</div>
+					</a>
+					<a href="http://www.phenomld.com" target="_blank">
 						<div id="lax" class="hvr-shrink project-container">
 							<div class="text-container valign-wrapper">
 								<p class="text valign">Designed and Developed a website for a lacrosse development camp based out of Palo Alto.</p>
@@ -108,6 +115,13 @@
     <script>
     	$(document).ready(function(){
 			$("#lax").hover(
+				function() {
+					$(this).find('.text-container').fadeIn();
+				},
+				function() {
+					$(this).find('.text-container').fadeOut();
+				});
+			$("#ctc").hover(
 				function() {
 					$(this).find('.text-container').fadeIn();
 				},
